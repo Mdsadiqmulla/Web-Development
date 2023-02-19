@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+        #row{
+            width: 500px;
+            height: 250px;
+            background-color: rgb(36, 9, 61);
+        }
+        #row2{
+            width: 500px;
+            height: 250px;
+            background-color: rgb(202, 156, 245);
+        }
+        .column{
+            width:250px;
+            height: 250px;
+            background-color: rgb(186, 186, 20);
+            float: left;
+        }
+        .column2{
+            width:250px;
+            height: 250px;
+            background-color: beige;
+            float: left;
+        }
+        body::before {
+            font-size: 2rem;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+            /* This box class is purely used for explaining how the bootstrap grid system works. */
+        .box {
+            background-color: lightblue;
+            border: 1px solid blue;
+            min-height: 50px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"><!--parent div-->
+        <div id="row"><!--row div-->
+            <div class="column"><!--column div-->
+                Home
+            </div>
+            <div class="column2">
+                About
+            </div>
+        </div>
+        <div id="row2">
+            <div class="column">
+                scale 
+            </div>
+            <div class="column2">
+                meter
+            </div>
+        </div>
+    </div>
+</body>
+</html>

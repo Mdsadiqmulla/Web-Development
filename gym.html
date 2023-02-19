@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gym Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+   
+    align-items: center;
+    padding: 0 20px;
+  }
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  main section {
+    width: 45%;
+  }
+  
+  main h2 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    main section {
+      width: 100%;
+    }
+  }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gym Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to Our Gym</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+    </section>
+    <section>
+      <h2>Our Classes</h2>
+      <ul>
+        <li>Yoga</li>
+        <li>Pilates</li>
+        <li>Spin</li>
+        <li>Boxing</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2021 Gym Name</p>
+  </footer>
+  
+  
+</body>
+</html>
